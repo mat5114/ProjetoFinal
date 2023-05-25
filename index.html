@@ -5,16 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AskSenpai</title>
+  <title>Animeiro</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
 </head>
 
 <body>
+  <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">LOGO</a> <!-- colocar logo aqui -->
@@ -30,6 +32,10 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Favoritos</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary" href='https://anilist.co/api/v2/oauth/authorize?client_id=12795&redirect_uri=http://127.0.0.1:5500&response_type=code'>Login with AniList</a>
+          </li>
+          
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -38,6 +44,7 @@
       </div>
     </div>
   </nav>
+
 
   <div id="conteudo">
 
@@ -60,8 +67,17 @@
 
       </div>
     </div>
-
   </div>
+
+  <!-- Spinner -->
+ <!--  <div class="text-center">
+    <div class="spinner-grow" style="width: 8rem; height: 8rem;" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div> -->
+
 </body>
+
+
 
 </html>
